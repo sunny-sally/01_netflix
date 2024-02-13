@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netfilx</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left-section">
+                <a href="/">
+                    <img id="logo" alt="netflix logo" src="main-img/netflix-logo.png">
+                </a>
+                <div class="left-section-menu">
+                    <a class="menu-content" href="#">TV shows</a>
+                    <a class="menu-content" href="#">Movies</a>
+                    <a class="menu-content" href="#">Recently Added</a>
+                    <a class="menu-content" href="#">My List</a>
+                </div>
+            </div>
+            
+
+            <div class="right-section">
+                <div class="search-icon-container">
+                    <img class="search-icon" src="./icons/search.svg">
+                    <div class="tooltip">Search</div>
+                </div>
+                <div class="kids-container">
+                    <a href="#">Kids</a>
+                </div>
+                <div class="notifications-icon-container">
+                    <img class="notifications-icon" src="./icons/notifications.svg">
+                    <div class="notifications-count">1</div>
+                </div>
+                <img class="current-user-picture" src="./main-img/netflix-avatar.png">
+                <div class="little-triangle">
+                    <svg onclick="toggleDropdown()" width="10" height="5" fill="lightgray">
+                    <polygon points="0,0 5,5 10,0" />
+                    </svg>
+                    <div class="user-list">
+                        <a class="user" href="#" value="user1">user1</a>
+                        <a class="user" href="#" value="user1">user1</a>
+                        <a class="user" href="#" value="user1">user1</a>
+                        <a class="user-last" href="#" value="account">&nbsp;&nbsp;+&nbsp;&nbsp;</a>
+                    </div>
+                    <script>
+                        function toggleDropdown() {
+                          var dropdownContent = document.querySelector('.dropdown-content');
+                          dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+                        }
+                      
+                        // 다른 부분을 클릭하면 드롭다운이 닫히도록 하는 부분
+                        document.addEventListener('click', function(event) {
+                          var dropdown = document.querySelector('.dropdown');
+                          if (!dropdown.contains(event.target)) {
+                            document.querySelector('.dropdown-content').style.display = 'none';
+                          }
+                        });
+                      </script>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--banner-->
+        <div class="banner">
+            <div class="banner_contents">
+                <h1 class="banner_title">종이의 집</h1>
+                <div class="banner_btn">
+                    <button>
+                        재생
+                    </button>
+                </div>
+                <p class="banner_description">
+                    역사상 최대 규모의 강도 사건을 수행하기 위해
+                    <br>
+                    교수라는 의문의 남자가 강도 8인단을 구출하는데...
+                </p>
+            </div>
+        </div>
+        <!--NETFILX ORIGINAL-->
+        <div class="row">
+            <h2>NETFILX ORIGINAL</h2>
+            <div class="row_posters">
+                <img src="main-img/large-movie1.jpg" alt="movie" class="row_poster row_posterLarge">
+                <img src="main-img/large-movie2.jpg" alt="movie" class="row_poster row_posterLarge">
+                <img src="main-img/large-movie3.jpg" alt="movie" class="row_poster row_posterLarge">
+                <img src="main-img/large-movie4.jpg" alt="movie" class="row_poster row_posterLarge">
+                <img src="main-img/large-movie5.jpg" alt="movie" class="row_poster row_posterLarge">
+                <img src="main-img/large-movie6.jpg" alt="movie" class="row_poster row_posterLarge">
+                <img src="main-img/large-movie7.jpg" alt="movie" class="row_poster row_posterLarge">
+                <img src="main-img/large-movie8.jpg" alt="movie" class="row_poster row_posterLarge">
+
+            </div>
+        </div>
+
+        <!--TRANDING NOW-->
+        <div class="row">
+            <h2>Trending Now</h2>
+            <div class="row_posters">
+                <img class="row_poster" src="main-img/small-movie1.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie2.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie3.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie4.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie5.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie6.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie7.jpg" alt="movie poster">
+
+            </div>
+        </div>
+
+        <!--TOP RATED-->
+        <div class="row">
+            <h2>TOP RATED</h2>
+            <div class="row_posters">
+                <img class="row_poster" src="main-img/movie-1.jpeg" alt="movie poster">
+                <img class="row_poster" src="main-img/movie-1.jpeg" alt="movie poster">
+                <img class="row_poster" src="main-img/movie-1.jpeg" alt="movie poster">
+                <img class="row_poster" src="main-img/movie-1.jpeg" alt="movie poster">
+                <img class="row_poster" src="main-img/movie-1.jpeg" alt="movie poster">
+                <img class="row_poster" src="main-img/movie-1.jpeg" alt="movie poster">
+                <img class="row_poster" src="main-img/movie-1.jpeg" alt="movie poster">
+                <img class="row_poster" src="main-img/movie-1.jpeg" alt="movie poster">
+                <img class="row_poster" src="main-img/movie-1.jpeg" alt="movie poster">
+                <img class="row_poster" src="main-img/movie-1.jpeg" alt="movie poster">
+                <img class="row_poster" src="main-img/movie-1.jpeg" alt="movie poster">
+                <img class="row_poster" src="main-img/movie-1.jpeg" alt="movie poster">
+                <img class="row_poster" src="main-img/movie-1.jpeg" alt="movie poster">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Trending Now</h2>
+            <div class="row_posters">
+                <img class="row_poster" src="main-img/small-movie7.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie6.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie5.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie4.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie3.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie2.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie1.jpg" alt="movie poster">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Trending Now</h2>
+            <div class="row_posters">
+                <img class="row_poster" src="main-img/small-movie3.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie4.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie5.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie6.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie7.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie1.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie2.jpg" alt="movie poster">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Trending Now</h2>
+            <div class="row_posters">
+                <img class="row_poster" src="main-img/small-movie6.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie7.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie1.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie2.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie3.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie4.jpg" alt="movie poster">
+                <img class="row_poster" src="main-img/small-movie5.jpg" alt="movie poster">
+
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>Copyright</p>
+    </footer>
+</body>
+</html>
